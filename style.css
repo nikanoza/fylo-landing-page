@@ -21,6 +21,7 @@ body {
 }
 
 .header-logo {
+  display: flex;
   width: 80px;
   height: 24px;
 }
@@ -392,4 +393,10 @@ body {
 .footer-link:hover,
 .footer-link:active {
   color: #6c9bff;
+}
+
+@media (max-width: 335px) {
+  .header {
+    padding: 24px 10px;
+  }
 }
