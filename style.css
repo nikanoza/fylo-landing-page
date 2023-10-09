@@ -37,9 +37,9 @@ body {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: normal;
   color: #07043b;
 }
 
@@ -182,11 +182,11 @@ body {
 .fylo-works:visited {
   font-family: "Open Sans";
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
   color: #3da08f;
-  margin-bottom: 6px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .icon {
@@ -194,10 +194,11 @@ body {
 }
 
 .string {
-  width: 170px;
+  width: 130px;
   height: 1px;
   margin: 0 auto;
   background: #3da08f;
+  margin-top: 6px;
   margin-bottom: 40px;
 }
 
@@ -266,7 +267,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 71px;
+  padding-bottom: 85px;
+  padding-top: 100px;
   background: #575988;
 }
 
@@ -277,7 +279,6 @@ body {
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 16px;
-  margin-top: 54px;
 }
 
 .access-text-box {
@@ -350,8 +351,7 @@ body {
 }
 
 .social-icons {
-  stroke-width: 0.796px;
-  stroke: #dfe4f0;
+  margin-right: 10.82px;
 }
 
 .footer-nav {
@@ -398,5 +398,233 @@ body {
 @media (max-width: 335px) {
   .header {
     padding: 24px 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .body {
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+  }
+
+  .header {
+    height: auto;
+    padding: 65px 80px;
+  }
+
+  .header-logo {
+    width: 166px;
+    height: 49px;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-text-box {
+    padding-left: 80px;
+  }
+
+  .heading {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .hero-description {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.531px;
+    text-align: left;
+  }
+
+  .input-email {
+    flex-direction: row;
+  }
+
+  .submit {
+    width: 200px;
+    height: 45px;
+    margin: 0;
+    margin-left: 16px;
+  }
+
+  #email {
+    width: 320px;
+    height: 45px;
+    margin: 0;
+  }
+
+  .section-featured {
+    background-color: #f8f8fe;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 50px;
+  }
+
+  .featured-text-box {
+    padding-left: 80px;
+  }
+
+  .featured-heading {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 38px;
+  }
+
+  .featured-paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .featured-img {
+    width: 542px;
+    height: 409px;
+    margin-left: 90px;
+  }
+
+  .fylo-div {
+    justify-content: flex-start;
+  }
+
+  .fylo-works:link,
+  .fylo-works:visited {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .string {
+    width: 166px;
+    margin: 0;
+    margin-bottom: 45px;
+  }
+
+  .testimonial-div {
+    width: 356px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .testimonial-description {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    /* margin-bottom: 18px; */
+    /* margin-top: 49px; */
+    margin: 0;
+  }
+
+  .author-name {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.55px;
+  }
+
+  .author-job {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.4px;
+  }
+
+  .quotes {
+    margin-top: 15px;
+  }
+
+  .early-access-section {
+    margin: 0;
+  }
+
+  .early-access {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    /* padding: 100px 0 85px 0; */
+  }
+
+  .access-text-box {
+    text-align: left;
+    padding-left: 80px;
+  }
+
+  .access-heading {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .access-paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+  }
+
+  .access-submit {
+    width: 200px;
+    height: 48px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #email-access {
+    width: 480px;
+    height: 48px;
+  }
+
+  .footer-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: baseline;
+    padding: 45px 0 80px 80px;
+  }
+
+  .footer-logo {
+    width: 135px;
+    height: 39px;
+  }
+
+  .social-icons {
+    margin-right: 12.49px;
   }
 }
