@@ -127,6 +127,11 @@ body {
   padding: 12px 10px;
 }
 
+.submit:hover {
+  background: #6c9bff;
+  cursor: pointer;
+}
+
 .section-hero,
 .section-featured,
 .early-access,
@@ -352,6 +357,11 @@ body {
 
 .social-icons {
   margin-right: 10.82px;
+}
+
+.social-icons:hover {
+  filter: invert(76%) sepia(43%) saturate(6898%) hue-rotate(198deg)
+    brightness(102%) contrast(104%);
 }
 
 .footer-nav {
@@ -605,6 +615,11 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+
+  .access-submit:hover {
+    background: #6c9bff;
+    cursor: pointer;
   }
 
   #email-access {
